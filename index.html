@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>note app</title>
+
+</head>
+<body class="bg-slate-200 md:p-[30px] p-[12px]">
+    <div class="bg-gray-300 p-[20px] h-[100vh] overflow-scroll rounded-[20px] ">
+        <h1 class=" text-[40px] font-black">Notes App</h1>
+
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-4 overflow-scroll"  id="screen">
+            <div class="w-full bg-teal-400 h-auto p-4 overflow-hidden rounded-[20px]">
+                <textarea name="" class="focus:outline-none h-[120px] bg-transparent w-full" placeholder="enter note text..." id="note"></textarea>
+                <button class="bg-black animate-bounce text-white p-3 w-[100px] rounded-[20px]" id="save-btn">Save</button>
+            </div>
+        </div>
+         
+
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+</html>
